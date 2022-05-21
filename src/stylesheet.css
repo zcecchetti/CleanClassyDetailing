@@ -1,4 +1,78 @@
 :root {
 
-    background-color: greenyellow;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: blue;
+}
+
+#content {
+    background-color: rgb(214, 87, 87);
+}
+
+#footer {
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 600px) {
+
+    #header {
+        background: linear-gradient(rgb(172, 70, 70) 95%, rgb(71, 70, 70)) 95%;
+        height: 10vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.25rem;
+    }
+
+    #content {
+        padding: 2.5vh 0;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5vh;
+    }
+
+    #intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .contentSection {
+        background-color: azure;
+        width: 90vw;
+        flex-grow: 1;
+        padding: 2vh 2.5vw;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services {
+        font-size: 1.25rem;
+        display: flex;
+        gap: 1vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .price {
+        border-bottom: 2px solid black;
+    }
 }

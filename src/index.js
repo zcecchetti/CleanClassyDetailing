@@ -1,3 +1,3 @@
-import './stylesheet.css'
+import './stylesheet.css';
 
-console.log("hi")
+console.log('hi');
