@@ -18,11 +18,16 @@ a {
 }
 
 #content {
-    background-color: rgb(202, 137, 137);
+    /* background-color: rgb(202, 137, 137); */
+    background-color: #C84630;
 }
 
 #footer {
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {
@@ -34,13 +39,19 @@ a {
     display: block;
 }
 
+.hidden {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
 
     #header {
-        background: linear-gradient(rgb(172, 70, 70) 95%, rgb(71, 70, 70)) 95%;
+        /* background: linear-gradient(rgb(172, 70, 70) 95%, rgb(71, 70, 70)) 95%; */
+        background-color: #231C07;
         height: 15vh;
         color: white;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 2.25rem;
@@ -65,7 +76,8 @@ a {
     }
 
     .contentSection {
-        background-color: rgb(240, 255, 255, .9);
+        /* background-color: rgb(240, 255, 255, .9); */
+        background-color: rgb(255, 255, 255, .8);
         width: 90vw;
         padding: 2vh 2.5vw;
         display: flex;
@@ -127,5 +139,9 @@ a {
         margin: 0;
         padding: 0 7vw;
         position: relative;
+    }
+
+    #languageList {
+        font-size: 1rem;
     }
 }
