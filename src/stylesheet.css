@@ -25,6 +25,15 @@ a {
     background-color: antiquewhite;
 }
 
+.description {
+    display: none;
+    align-self: flex-start;
+}
+
+.visible {
+    display: block;
+}
+
 @media screen and (max-width: 600px) {
 
     #header {
@@ -112,5 +121,11 @@ a {
     .slides {
         display: flex;
         justify-content: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 7vw;
+        position: relative;
     }
 }
