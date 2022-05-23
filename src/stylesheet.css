@@ -106,7 +106,7 @@ a {
 
     img {
         width: 85vw; 
-        height: 45vh; 
+        height: 60vh; 
     }
 
     #frontAudi {
@@ -116,7 +116,7 @@ a {
 
     #backAudi {
         object-fit: cover; 
-        object-position: 0 35%;
+        object-position: 0 40%;
     }
 
     #soapyWheel {
@@ -145,7 +145,6 @@ a {
     }
 
     li {
-        /* border-bottom: 1px solid black; */
         list-style-type: none;
     }
 
@@ -158,9 +157,4 @@ a {
         height: 2.5rem;
         width: auto;
     }
-
-    /* #insta {
-        height: 2.75rem;
-        width: auto;
-    } */
 }
