@@ -6,7 +6,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #231C07;
 }
 
 a {
@@ -40,6 +39,18 @@ a {
     align-self: flex-start;
 }
 
+.popup {
+    display: none;
+    z-index: 1;
+    position: sticky;
+    top: 62.5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 25vh;
+    color: white;
+    margin-bottom: -27.5vh;
+}
+
 .visible {
     display: flex;
     flex-direction: column;
@@ -60,6 +71,7 @@ a {
         justify-content: center;
         align-items: center;
         font-size: 2.25rem;
+        padding: 0 1vw 1vw 0;
     }
 
     #content {
@@ -100,15 +112,17 @@ a {
 
     .title {
         display: flex;
-        font-size: 2rem;
+        font-size: 2.5rem;
         justify-content: center;
         align-items: center;
+        font-family: cursive;
     }
 
     .package {
         font-size: 1.5rem;
         justify-content: center;
         align-items: center;
+        margin: -1vh 0 0 0;
         padding: 0 0 1vh 0;
     }
 
@@ -163,6 +177,8 @@ a {
 
     #languageList {
         font-size: 1rem;
+        align-self: flex-end;
+        text-decoration: underline;
     }
 
     li {
@@ -177,5 +193,24 @@ a {
     .contactIcon {
         height: 2.5rem;
         width: auto;
+    }
+
+    #promotion {
+        font-weight: 700;
+        font-size: 2rem;
+        background-color:rgb(35, 28, 7, .9);
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .popupText {
+        padding: 0vh 3vw;
+    }
+
+    #popupButton {
+        width: 60%;
+        height: 3rem;
+        font-size: 1.5rem;
     }
 }

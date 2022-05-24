@@ -71,3 +71,11 @@ if (localStorage.getItem('language')) {
     changeToEnglish();
   }
 }
+
+// close popup if button is clicked
+const popupButton = document.getElementById('popupButton');
+const promotion = document.getElementById('promotion');
+
+popupButton.addEventListener('click', () => {
+  promotion.classList.remove('visible');
+});
