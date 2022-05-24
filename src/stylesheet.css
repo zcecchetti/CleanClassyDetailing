@@ -196,7 +196,7 @@ a {
     }
 
     #promotion {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 2rem;
         background-color:rgb(35, 28, 7, .9);
         justify-content: center;
@@ -209,8 +209,10 @@ a {
     }
 
     #popupButton {
+        padding: 1vh;
         width: 60%;
         height: 3rem;
         font-size: 1.5rem;
+        color: black;
     }
 }
