@@ -18,12 +18,11 @@ a {
 }
 
 #content {
-    background-color: #C84630;
+    /* background-color: #C84630; */
     background: linear-gradient(#C84630 90%, #231C07);
 }
 
 #footer {
-    /* background-color: antiquewhite; */
     background-color: #231C07;
     display: flex;
     flex-direction: column;
@@ -32,13 +31,17 @@ a {
     color: white;
 }
 
-.description {
+.langToggle {
     display: none;
+}
+
+.description {
     align-self: flex-start;
 }
 
 .visible {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .hidden {
@@ -103,7 +106,6 @@ a {
 
     .package {
         font-size: 1.5rem;
-        display: flex;
         justify-content: center;
         align-items: center;
         padding: 0 0 1vh 0;
