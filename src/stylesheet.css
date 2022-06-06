@@ -23,16 +23,13 @@ a {
     color: white;
 }
 
-.langToggle {
-    display: none;
-}
-
 .description {
     align-self: flex-start;
 }
 
 .popup {
-    display: none;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
     position: sticky;
     top: 62.5vh;
@@ -41,11 +38,6 @@ a {
     height: 30vh;
     color: white;
     margin-bottom: -32.5vh;
-}
-
-.visible {
-    display: flex;
-    flex-direction: column;
 }
 
 .hidden {
@@ -112,8 +104,8 @@ a {
 
     .package {
         font-size: 1.5rem;
-        justify-content: center;
-        align-items: center;
+        justify-self: center;
+        align-self: center;
         margin: -1vh 0 0 0;
         padding: 0 0 1vh 0;
     }
@@ -210,6 +202,11 @@ a {
 }
 
 @media screen and (min-width: 600px) { 
+
+    :root {
+        font-size: 18px;
+    }
+
     body {
         display: flex;
         flex-direction: column;
@@ -220,7 +217,7 @@ a {
         height: 10vh;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 25vw 25vw 25vw 1fr;
         justify-content: center;
         align-items: center;
         background-color: #231C07;
@@ -230,31 +227,90 @@ a {
     #logo {
         height: 8vh;
         width: auto;
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         justify-self: center;
     }
 
     #languageList {
-        grid-column: 3 / 4;
+        grid-column: 4 / 5;
+        justify-self: flex-end;
     }
 
     #content {
-        width: 80vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
         gap: 16px;
         margin: 16px 0;
+        grid-template-columns: 1fr 25vw 25vw 25vw 1fr;
+        grid-template-rows: 7.75rem 6rem 1fr;
+    }
+
+    #intro {
+        grid-row: 1 / 2;
+        grid-column: 2 / 5;
+    }
+
+    #socialSection {
+        grid-row: 2 / 3;
+        grid-column: 2 / 5;
+    }
+
+    #goldDetail {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        display: flex;
+        align-self: flex-start;
+        height: 95%;
+    }
+
+    #goldWash {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        display: flex;
+        align-self: flex-start;
+        height: 95%;
+    }
+
+    #expressDetail {
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        display: flex;
+        align-self: flex-start;
+        height: 95%;
+    }
+
+    #promotion {
+        grid-row: 2 / 3;
+        grid-column: 2 / 5;
+        width: 35vw;
+        height: 15vh;
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(35, 28, 7, .9);
+        font-size: 1.25rem;
+        padding: 16px;
+        gap: 8px;;
+    }
+
+    #popupButton {
+        width: 8rem;
+        font-size: 1.05rem;
+        height: 1.5rem;
     }
 
     .contentSection {
-        width: 70vw;
         background-color: rgb(255, 255, 255, .8);
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 16px;
+        gap: .5rem;
     }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
     .contactIcon {
         height: 2.5rem;
         width: auto;
@@ -269,8 +325,32 @@ a {
         height: 70vh; 
     }
 
+    #backAudi {
+        object-fit: cover; 
+        object-position: 0 50%;
+        width: 20vw;
+        height: auto;
+        width: 20vw;
+        height: 50vh;
+    }
+
     #frontAudi {
         object-fit: cover; 
         object-position: 0 50%;
+        width: 20vw;
+        height: auto;
+        width: 20vw;
+        height: 50vh;
+    }
+
+    #soapyWheel {
+        object-fit: cover; 
+        object-position: 0% 50%;
+        width: 20vw;
+        height: 50vh;
+    }
+
+    li {
+        list-style-type: none;
     }
 }
